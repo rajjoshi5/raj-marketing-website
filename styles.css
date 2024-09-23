@@ -100,11 +100,11 @@ nav {
     color: #3498db;
 }
 
-.about, .services {
-    padding: 50px 0;
+.about, .services, .gallery {
+    padding: 60px 0;
 }
 
-.about h2, .services h2 {
+.about h2, .services h2, .gallery h2 {
     text-align: center;
     margin-bottom: 30px;
     color: #2c3e50;
@@ -121,6 +121,30 @@ nav {
     padding: 20px;
     border-radius: 5px;
     text-align: center;
+}
+
+.gallery {
+    background-color: #f8f8f8;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery-img {
+    width: 30%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
 }
 
 .cta {
@@ -171,38 +195,9 @@ footer {
     .footer-content > div {
         margin-bottom: 20px;
     }
-    .gallery {
-        padding: 50px 0;
-        background-color: #f8f8f8;
-    }
-    
-    .gallery h2 {
-        text-align: center;
-        margin-bottom: 30px;
-        color: #2c3e50;
-    }
-    
-    .image-gallery {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    
+
     .gallery-img {
-        width: 30%;
-        margin-bottom: 20px;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        transition: transform 0.3s ease;
-    }
-    
-    .gallery-img:hover {
-        transform: scale(1.05);
-    }
-    
-    @media (max-width: 768px) {
-        .gallery-img {
-            width: 80%;
-        }
+        width: 90%;
+        height: 250px;
     }
 }
