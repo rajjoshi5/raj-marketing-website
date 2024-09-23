@@ -19,13 +19,20 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 10px 30px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo img {
-    height: 40px;
+    height: 60px;
+    width: auto;
+    max-width: 200px;
 }
 
 .nav-links {
@@ -142,12 +149,64 @@ p {
     right: 20px;
 }
 
-/* Rest of the CSS remains the same */
+/* Statistics Section */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.stat-item h2 {
+    font-size: 3rem;
+    color: #007BFF;
+}
+
+.stat-item p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* About, Services and Contact Sections */
+section {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p, li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
+    }
+
+    .logo img {
+        height: 50px;
     }
 
     .stats {
