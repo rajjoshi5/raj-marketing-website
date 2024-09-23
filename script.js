@@ -1,21 +1,22 @@
-// Script to handle slider transitions
-let currentSlide = 0;
+let currentIndex = 0;
 const slides = document.querySelectorAll('.slide');
-const totalSlides = slides.length;
 
 function showSlide(index) {
-    slides.forEach((slide, idx) => {
-        slide.style.display = idx === index ? 'block' : 'none';
+    slides.forEach((slide, i) => {
+        if (i === index) {
+            slide.style.display = 'flex';
+        } else {
+            slide.style.display = 'none';
+        }
     });
 }
 
 function nextSlide() {
-    currentSlide = (currentSlide + 1) % totalSlides;
-    showSlide(currentSlide);
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
 }
 
-// Auto-slide every 5 seconds
-setInterval(nextSlide, 5000);
+setInterval(nextSlide, 3000); // Change slide every 3 seconds
 
-// Initialize the slider
-showSlide(currentSlide);
+// Initial display of the first slide
+showSlide(currentIndex);
