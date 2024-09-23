@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raj Marketing</title>
+    <title>Raj Marketing - Connecting Textile Manufacturers and Retailers</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -16,41 +17,147 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#products">Products</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
     </header>
 
     <section id="home" class="hero">
-        <div class="slider">
-            <div class="slide">
-                <img src="images/Kalamkari-min.jpeg" alt="Kalamkari Textile">
-                <div class="slide-content">
-                    <h1>Connecting Textile Manufacturers and Retailers Since 1997</h1>
-                    <p>Your trusted partner in South India's textile industry</p>
-                    <a href="#contact" class="btn">Learn More</a>
+        <div class="hero-content">
+            <h1>Connecting Textile Manufacturers and Retailers Since 1997</h1>
+            <p>Your trusted partner in South India's textile industry</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Raj Marketing</h2>
+            <p>Founded in 1997 by Pawan Joshi, Raj Marketing has been a pivotal force in connecting textile manufacturers with leading retailers across South India. With over two decades of experience, we've built strong relationships with both manufacturers and retailers, ensuring smooth and efficient transactions.</p>
+            <div class="stats">
+                <div class="stat-item">
+                    <i class="fas fa-store"></i>
+                    <h3>50+</h3>
+                    <p>Retail Customers</p>
                 </div>
-            </div>
-            <div class="slide">
-                <img src="images/Ikkat.jpg" alt="Ikkat Textile">
-                <div class="slide-content">
-                    <h1>Bridging the Gap in Textile Industry</h1>
-                    <p>Bringing manufacturers and retailers together</p>
-                    <a href="#services" class="btn">Our Services</a>
+                <div class="stat-item">
+                    <i class="fas fa-industry"></i>
+                    <h3>70+</h3>
+                    <p>Textile Manufacturers</p>
                 </div>
-            </div>
-            <div class="slide">
-                <img src="images/Handloom-Fabrics.png" alt="Handloom Fabrics">
-                <div class="slide-content">
-                    <h1>Promoting South Indian Textiles</h1>
-                    <p>Showcasing the rich heritage of handloom fabrics</p>
-                    <a href="#about" class="btn">About Us</a>
+                <div class="stat-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>25+</h3>
+                    <p>Years of Excellence</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Rest of the content remains the same -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Connecting Partners</h3>
+                    <p>We bridge the gap between manufacturers and retailers, facilitating profitable partnerships.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Market Insights</h3>
+                    <p>Stay ahead with our in-depth analysis of the latest textile market trends.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-truck"></i>
+                    <h3>Logistics Support</h3>
+                    <p>We ensure smooth and timely delivery of products from manufacturers to retailers.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Quality Assurance</h3>
+                    <p>Our team ensures that all products meet the highest quality standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="product-slider">
+                <div class="product-slide">
+                    <img src="images/Kalamkari-min.jpeg" alt="Kalamkari Textile">
+                    <h3>Kalamkari Fabrics</h3>
+                    <p>Traditional hand-painted or block-printed cotton textiles.</p>
+                </div>
+                <div class="product-slide">
+                    <img src="images/Ikkat.jpg" alt="Ikkat Textile">
+                    <h3>Ikkat Weaves</h3>
+                    <p>Unique dyed and woven fabrics with intricate patterns.</p>
+                </div>
+                <div class="product-slide">
+                    <img src="images/Handloom-Fabrics.png" alt="Handloom Fabrics">
+                    <h3>Handloom Fabrics</h3>
+                    <p>Exquisite hand-woven textiles showcasing artisanal skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Raj Marketing Logo">
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Textile Street, Chennai, Tamil Nadu, India</p>
+                    <p><i class="fas fa-phone"></i> +91 123 456 7890</p>
+                    <p><i class="fas fa-envelope"></i> info@rajmarketing.com</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Raj Marketing. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
